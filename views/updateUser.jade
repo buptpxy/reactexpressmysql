@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    h1 更新产品资料
+    form(method='post', action='/users/updateUser')
+        div.form-row
+            label
+                span productId:
+                input(type='text',name='productId')
+        div.form-row
+            label
+                span name:
+                input(type='text',name='name')
+        div.form-row
+            label
+                span description:
+                input(type='text',name='description')
+        div.form-row
+            label
+                span price:
+                input(type='text',name='price')
+        div.form-row
+            label
+                span category_name:
+                input(type='text',name='category_name')
+        div.form-row
+            input(type='submit')
